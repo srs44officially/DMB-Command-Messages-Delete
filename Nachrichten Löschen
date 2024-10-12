@@ -1,0 +1,94 @@
+{
+  "name": "löschen",
+  "permissions": "NONE",
+  "permissions2": "NONE",
+  "restriction": "1",
+  "_id": "",
+  "actions": [
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "",
+      "buttons": [
+        {
+          "name": "Nachrichten LÖSCHEN",
+          "type": "DANGER",
+          "id": "msg-button-b04ad68",
+          "row": "",
+          "url": "",
+          "emoji": "",
+          "mode": "PERSONAL",
+          "time": "",
+          "actions": [
+            {
+              "channel": "0",
+              "count": "${slashParams(\"Anzahl\")}",
+              "condition": "0",
+              "custom": "",
+              "varName": "",
+              "name": "Delete Bulk Messages"
+            },
+            {
+              "channel": "0",
+              "varName": "",
+              "message": "GELÖSCHT!",
+              "buttons": [],
+              "selectMenus": [],
+              "attachments": [],
+              "embeds": [],
+              "reply": true,
+              "ephemeral": false,
+              "tts": false,
+              "overwrite": false,
+              "dontSend": false,
+              "editMessage": "intUpdate",
+              "editMessageVarName": "",
+              "storage": "0",
+              "varName2": "",
+              "name": "Send Message"
+            }
+          ]
+        }
+      ],
+      "selectMenus": [],
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "ACHTUNG",
+          "url": "",
+          "color": "#FF0000",
+          "timestamp": "false",
+          "imageUrl": "https://cdn.discordapp.com/attachments/818568662754525224/1294720466283663450/WARNING.png?ex=670c09e5&is=670ab865&hm=f2e4bb0ed324aa3a9a1b86a90ba764bc2af3b5f04c43a4f31ecb5b682acb0d46&",
+          "thumbUrl": "",
+          "description": "Willst du wirklich ${slashParams(\"Anzahl\")} in ${channel} Löschen? Dies ist nicht umkehrbar!",
+          "fields": [],
+          "author": "",
+          "authorUrl": "",
+          "authorIcon": "",
+          "footerText": "",
+          "footerIconUrl": ""
+        }
+      ],
+      "reply": true,
+      "ephemeral": true,
+      "tts": false,
+      "overwrite": false,
+      "dontSend": false,
+      "editMessage": "0",
+      "editMessageVarName": "",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    }
+  ],
+  "comType": "4",
+  "parameters": [
+    {
+      "name": "Anzahl",
+      "description": "Anzahl der zu Löschenden Nachrichten",
+      "type": "INTEGER",
+      "required": true,
+      "choices": null
+    }
+  ]
+}
