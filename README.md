@@ -2,7 +2,7 @@
 
 ## Feautures
 
-- Bestetigung Notwendig
+- Bestätigung Notwendig
 - Mehrere Nachrichten auf Einmal
 
 Dieser Command ist dafür da das man viele Nachrichten auf einmal Löschen kann.
